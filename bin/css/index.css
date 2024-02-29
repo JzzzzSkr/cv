@@ -1,0 +1,228 @@
+/* container */
+.container {
+  /* background-color: antiquewhite; */
+  height: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+h3 {
+  font-size: 1.1em;
+  background-color: #faf9de;
+  border-radius: 5px;
+}
+
+.box {
+  margin: 1.5em 5em;
+}
+
+/* technology section */
+.tech-container {
+  /* background-color: aqua; */
+  display: flex;
+  /* align-items: center;  */
+}
+
+.basic {
+  flex: 1;
+}
+
+.tech-stack {
+  flex: 1;
+  /* background-color: aquamarine; */
+}
+
+.basic > div {
+  /* margin-bottom: 1em; */
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.5em;
+}
+
+/* 最后一个div的paddingbottom为0 */
+.basic > div:last-child {
+  padding-bottom: 0px;
+}
+
+.basic div span {
+  padding-right: 0.5em;
+}
+
+.basic div i {
+  font-weight: bold; /* Make font bold */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 1em 1em 0; /* !!! */
+}
+
+.grid-container h3 {
+  margin-bottom: 0.5em;
+  background-color: #faf9de;
+  border-radius: 5px;
+  display: inline;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.skill-list {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-list li {
+  margin-right: 12px;
+  margin-top: 10px;
+}
+
+/* projects */
+
+.projects h2,
+.projects div,
+.projects li,
+.projects h3 {
+  margin-bottom: 1em;
+}
+
+.projects a {
+  color: #007bff;
+  font-size: 15px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  margin-left: 10px;
+}
+
+.projects a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.projects hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 1px dashed #b6b7b9;
+}
+
+.project-experience-one,
+.project-experience-two {
+  display: flex;
+}
+
+.project-experience-one .project-content {
+  flex: 1;
+}
+
+.project-experience-one .project-img {
+  flex: 1;
+  /* background-color: red; */
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.project-content {
+  margin-right: 2em;
+}
+
+.project-content h3 {
+  display: flex;
+  align-items: center;
+}
+
+.git {
+  align-items: center;
+  background-color: #000000;
+  border-radius: 10%;
+  color: #000000;
+  display: inline-block;
+  text-align: center;
+
+  height: 1em;
+  line-height: 1em;
+  width: 4em;
+
+  text-decoration: none !important;
+  padding: 0 3px;
+}
+
+.git:hover {
+  text-decoration: none !important;
+}
+
+.git span {
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  /* margin-left: 4px; */
+}
+
+.git span:hover{
+  text-decoration: none;
+}
+
+.git .icon {
+  height: 1em;
+  width: 1em;
+  background-color: rgb(0, 0, 0);
+  justify-content: left;
+}
+
+.git .icon:hover{
+  text-decoration: none;
+}
+
+ 
+ .bigImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.opacityBottom {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0,0,0,0.8);
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .box {
+    margin: 1.5em;
+  }
+
+  .tech-container,
+  .projects,
+  .project-experience-one,
+  .project-experience-two {
+    flex-direction: column;
+  }
+  .project-content {
+    margin-right: 0;
+  }
+
+  .basic {
+    /* 这里的间距要和其他section之间的间距相同 */
+    margin-bottom: 2em;
+  }
+}

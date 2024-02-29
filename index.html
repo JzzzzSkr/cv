@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Responsive Resume</title>
+    <link rel="stylesheet" href="./bin/icons/iconfont.css" />
+    <link rel="stylesheet" href="./bin/css/base.css" />
+    <link rel="stylesheet" href="./bin/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header>
+        <div class="box title"><h1>Huahui (Michael) Liang</h1></div>
+        <div class="box summary">
+          <p>
+            Hi, I am Michael. I am proficient in HTML and CSS, capable of
+            constructing efficient, responsive web pages and deploying backend
+            services using Express. I enjoy thinking and discussing solutions
+            with friends, so I believe I can bring innovative thinking and
+            vitality during work. My career aspirations are to become a
+            full-stack engineer, combining my knowledge in AI to create more
+            efficient and intelligent software and websites.
+          </p>
+        </div>
+      </header>
+
+      <!-- tech-info and Technology stack container -->
+      <div class="box tech-container">
+        <div class="basic">
+          <div class="address">
+            <span class="iconfont icon-home"></span>
+            <p>Lives in <i>Hobart Tasmania</i></p>
+          </div>
+          <div class="uni">
+            <span class="iconfont icon-rencaishuangxuanhui"></span>
+            <p>Studies at <i>University of Tasmania</i></p>
+          </div>
+          <div class="major">
+            <span class="iconfont icon-shidirenzheng"></span>
+            <p>
+              Bachelor of Information and Communication Technology (specializing
+              in AI)
+            </p>
+          </div>
+          <div class="email">
+            <span class="iconfont icon-email"></span>
+            <p>
+              Email:
+              <a href="mailto:huahuiie@outlook.com">huahuiie@outlook.com</a>
+            </p>
+          </div>
+          <div class="phone">
+            <span class="iconfont icon-phone"></span>
+            <p>Phone: +61 421896406</p>
+          </div>
+        </div>
+        <div class="tech-stack">
+          <h2>Technology stack</h2>
+
+          <div class="grid-container">
+            <div class="frontend grid-item">
+              <h3>Frontend</h3>
+              <ul class="skill-list">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+                <li>react</li>
+              </ul>
+            </div>
+            <div class="backend grid-item">
+              <h3>Backend</h3>
+              <ul class="skill-list">
+                <li>express.js</li>
+                <li>node.js</li>
+                <li>PHP</li>
+                <li>python</li>
+              </ul>
+            </div>
+            <div class="database grid-item">
+              <h3>Database</h3>
+              <ul class="skill-list">
+                <li>mysql</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+            <div class="others grid-item">
+              <h3>Others</h3>
+              <ul class="skill-list">
+                <li>WordPress</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box projects">
+        <div class="title"><h2>Project experience</h2></div>
+
+        <div class="project-experience-one">
+          <div class="project-content">
+            <h3>
+              1. Miyazaki Cartoons<a
+                href="https://jzzzzskr.github.io/miyazaki/"
+              >
+                <span>(web link)</span></a
+              >
+              <a href="https://github.com/JzzzzSkr/miyazaki" class="git">
+                <div class="icon" style="display: flex">
+                  <img
+                    src="./bin/images/fluidicon.png"
+                    alt=""
+                    style="margin-right: 3px"
+                  />
+                  <span>Github</span>
+                </div>
+              </a>
+            </h3>
+            <li>
+              <span class="subtitle">Responsive</span>: This is a responsive
+              website that utilizes CSS Grid, Flexbox, and Bootstrap. You can
+              access and browse its content both on a browser and directly on
+              your mobile phone.
+            </li>
+            <li>
+              <span class="subtitle">React Router (Hash Router)</span>: This
+              site employs the React Hash Router for routing, facilitating high
+              reusability of components. It reduces the rendering frequency of
+              components and, when combined with lazy loading, these strategies
+              successfully enhance the page loading speed by 1 to 2 seconds,
+              along with the use of carousels.
+            </li>
+            <li>
+              <span class="subtitle">Burger Menu</span>: On mobile devices, the
+              navigation bar transforms into a burger menu, which expands upon
+              clicking. This enhances user experience and contributes to a more
+              aesthetically pleasing appearance on mobile platforms.
+            </li>
+          </div>
+          <div class="project-img">
+            <img src="./bin/images/carton.png" alt="" class="enlarge" />
+          </div>
+        </div>
+        <hr />
+        <div class="project-experience-one">
+          <div class="project-content">
+            <h3>
+              2. Miku Media
+              <a href="https://jzzzzskr.github.io/mikuMedia/#/home"
+                ><span>(web link)</span></a
+              >
+              <a href="https://github.com/JzzzzSkr/mikuMedia" class="git">
+                <div class="icon" style="display: flex">
+                  <img
+                    src="./bin/images/fluidicon.png"
+                    alt=""
+                    style="margin-right: 3px"
+                  />
+                  <span>Github</span>
+                </div>
+              </a>
+            </h3>
+            <li>
+              <span class="subtitle">Use Ant Design Components</span>: This
+              project incorporates Ant Design's Tabs component among others,
+              facilitating page navigation without the need for configuring
+              complex routing. This reduces the frequency of component
+              rendering.
+            </li>
+            <li>
+              <span class="subtitle">Video.js</span>: Use video.js for playing
+              videos and movies.
+            </li>
+            <li>
+              <span class="subtitle">Responsive Design</span>: Grid and Flexbox
+              layouts are employed to arrange movie lists, music lists, and
+              other page elements, ensuring a responsive design.
+            </li>
+            <li>
+              <span class="subtitle">Lazy Loading</span>: use Route lazy loading
+              to implemented to enhance page rendering speed and reduce initial
+              load time.
+            </li>
+          </div>
+          <div class="project-img">
+            <img src="./bin/images/miku.png" alt="" class="enlarge" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+
+    <script>
+      document.querySelectorAll(".enlarge").forEach((img) => {
+        img.addEventListener("click", (e) => {
+          let imgsrc = e.target.getAttribute("src");
+
+          let overlay = document.createElement("div");
+          overlay.className = "opacityBottom";
+          overlay.style.display = "block";
+
+          let bigImg = document.createElement("img");
+          bigImg.className = "bigImg";
+          bigImg.src = imgsrc;
+
+          overlay.appendChild(bigImg);
+
+          overlay.addEventListener("click", () => {
+            overlay.style.display = "none";
+            document.body.removeChild(overlay);
+          });
+
+          document.body.appendChild(overlay);
+        });
+      });
+    </script>
+  </body>
+</html>
